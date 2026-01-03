@@ -5,21 +5,21 @@
 class Qpki < Formula
   desc "Post-Quantum PKI (QPKI) - Certificate Authority toolkit with PQC support"
   homepage "https://github.com/remiblancher/post-quantum-pki"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.5.0/qpki_0.5.0_darwin_amd64.tar.gz"
-      sha256 "f83af79d8f0581714ef7f6cd5f5124377d144c81c64c5ee4f59cca3e7e230766"
+      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.6.0/qpki_0.6.0_darwin_amd64.tar.gz"
+      sha256 "32a0f0cced7e6f86a1be835d6988f4221e720257dd04cf49a55c84d247244307"
 
       def install
         bin.install "qpki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.5.0/qpki_0.5.0_darwin_arm64.tar.gz"
-      sha256 "dcecd693ea625fd98893421d1132a8608c0cd86cd6e49b31961299203ec6ea36"
+      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.6.0/qpki_0.6.0_darwin_arm64.tar.gz"
+      sha256 "2a5ad0bbc2529ecc7fcb693c0743f9896fd801f0890f3aa143124cb81382d3de"
 
       def install
         bin.install "qpki"
@@ -29,15 +29,15 @@ class Qpki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.5.0/qpki_0.5.0_linux_amd64.tar.gz"
-      sha256 "ff6ce020aa6c96de671c9722b1c64c94367bb21af1b9f7ceb1a6be1873df2815"
+      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.6.0/qpki_0.6.0_linux_amd64.tar.gz"
+      sha256 "46e1948b97bd0c9ff3e75f65c6c986811681cd7f49baf427bbfe13a40b858436"
       def install
         bin.install "qpki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.5.0/qpki_0.5.0_linux_arm64.tar.gz"
-      sha256 "95e99ae3262e896275debd0c891c641b056e2eb033b497ae4543152f3eab85a4"
+      url "https://github.com/remiblancher/post-quantum-pki/releases/download/v0.6.0/qpki_0.6.0_linux_arm64.tar.gz"
+      sha256 "9f8e05fe78104049e2cf3ca864975c1d93286e1e9c1a3d984ce113a33ce7005e"
       def install
         bin.install "qpki"
       end
